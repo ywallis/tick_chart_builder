@@ -5,5 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "ccxt-pg",
     "ccxt>=4.4.42",
+    "psycopg[binary]>=3.2.3",
+    "python-dotenv>=1.0.1",
+    "redis[hiredis]>=5.2.1",
 ]
+
+[tool.uv.sources]
+ccxt-pg = { path = "../ccxt-pg", editable = true }
